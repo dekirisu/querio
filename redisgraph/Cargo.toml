@@ -6,6 +6,7 @@ edition = "2021"
 authors = ["Dekirisu <dekirisu@gmail.com>"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/dekirisu/querio/"
+description = "RedisGraph native io for querio"
 
 [lib]
 proc-macro = true
