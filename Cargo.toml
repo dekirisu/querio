@@ -24,7 +24,7 @@ native_io = ["native_input","native_output"]
 variables = ["querio_derive/variables"]
 
 [workspace]
-members = ["derive","redisgraph"]
+members = ["derive"]
 
 [[example]]
 name = "usage"
