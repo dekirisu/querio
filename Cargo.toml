@@ -6,6 +6,7 @@ edition = "2021"
 authors = ["Dekirisu <dekirisu@gmail.com>"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/dekirisu/querio/"
+description = "Struct based string builder"
 
 [dependencies]
 strung = "0.1.3"
