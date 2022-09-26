@@ -1,0 +1,21 @@
+[package]
+name = "querio_redisgraph"
+version = "0.0.1"
+edition = "2021"
+
+authors = ["Dekirisu <dekirisu@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/dekirisu/querio/"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "1.0"
+quote = "1.0"
+
+[dev-dependencies]
+querio = {version="0.0.1", features=["native_io"]}
+
+[patch.crates-io]
+querio = {path = "../"}
