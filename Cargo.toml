@@ -1,0 +1,31 @@
+[package]
+name = "querio"
+version = "0.0.1"
+edition = "2021"
+
+authors = ["Dekirisu <dekirisu@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/dekirisu/querio/"
+
+[dependencies]
+strung = "0.1.3"
+intuple = "0.1.0"
+querio_derive = "0.0.1"
+
+[patch.crates-io]
+querio_derive = {path = "./derive"}
+
+[features]
+default = ["variables"]
+flatten = ["querio_derive/flatten"]
+native_input = ["querio_derive/native_input"]
+native_output = ["querio_derive/native_output"]
+native_io = ["native_input","native_output"]
+variables = ["querio_derive/variables"]
+
+[workspace]
+members = ["derive","redisgraph"]
+
+[[example]]
+name = "usage"
+required-features = []
