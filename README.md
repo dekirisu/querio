@@ -39,17 +39,17 @@ struct VarStruct {
     sections("Test1","Test2"), 
 
     // the string those variables will be merged in
-    "#numb #strg <0> <1>"
+    "#numb #strg <0> <1> <0>"
 )] struct ABuilder {}
 
 fn main(){
     // use the builder with attached variables struct
     let text = ABuilder::querio(&VarStruct{numb:10,strg:"RT"}); 
-    // => "10 RT Test1 Test2"
+    // => "10 RT Test1 Test2 Test1"
         
     // OR use the variable structs tuple representation and ::qrio(..)
     let text = ABuilder::qrio((10,"RT"));
-    // => "10 RT Test1 Test2"
+    // => "10 RT Test1 Test2 Test1"
 }
 ```
 
