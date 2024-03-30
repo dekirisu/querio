@@ -1,4 +1,6 @@
-<h1 align="center">querio</h1>
+<div align="center" style="background:#6d0023;padding:12px 0px;margin-bottom:16px;border-radius:24px;">
+    <img src="https://github.com/dekirisu/strung/assets/78398528/59006ba5-f19c-4617-9cf3-691e841b0aba">
+</div>
 <p align="center">
     <a href="https://github.com/dekirisu/querio" style="position:relative">
         <img src="https://img.shields.io/badge/github-dekirisu/querio-ee6677">
